@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100b1c" />
+  <meta name="description" content="A little universe made with love for Sevanthi, my Aishu. Happy birthday, 20 November." />
+  <title>For Sevanthi · My Aishu ♡</title>
+  <link rel="icon" type="image/svg+xml" href="assets/heart.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="rain-layer" id="rainLayer" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Opening moment -->
+  <section class="intro-screen" id="introScreen" aria-label="Birthday surprise introduction">
+    <div class="intro-orbit orbit-a"></div>
+    <div class="intro-orbit orbit-b"></div>
+    <div class="intro-heart-rain" id="introHeartRain" aria-hidden="true"></div>
+    <div class="intro-content">
+      <span class="eyebrow intro-eyebrow"><span class="tiny-star">✦</span> A LITTLE UNIVERSE, JUST FOR YOU <span class="tiny-star">✦</span></span>
+      <div class="intro-heart" aria-hidden="true">♡</div>
+      <p class="intro-pretitle">For the girl who makes everything glow</p>
+      <h1>Sevanthi<span class="name-sparkle">✧</span></h1>
+      <p class="intro-subtitle">also known as my favourite person, <em>Aishu</em>.</p>
+      <button class="button button-primary intro-button" id="enterButton" type="button">
+        <span>Open your surprise</span><span class="button-arrow">↗</span>
+      </button>
+      <span class="intro-footnote">MADE WITH ALL MY HEART · 20 NOVEMBER</span>
+    </div>
+  </section>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Back to the beginning">
+      <span class="brand-mark">♡</span><span>for <strong>Aishu</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#memories">Memories</a>
+      <a href="#surprises">Surprises</a>
+      <a href="#games">Games</a>
+      <a href="#rainy-day">Rainy day</a>
+      <a href="#open-when">Open when…</a>
+      <a href="#music">Our song</a>
+      <a href="#letter">Love letter</a>
+    </nav>
+    <a class="header-heart" href="#letter" aria-label="Jump to the love letter">♥</a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> 20 NOVEMBER <span class="eyebrow-line"></span></div>
+        <p class="hero-kicker">Today, the universe celebrates you.</p>
+        <h2>Happy birthday,<br /><span class="script-name">my Aishu.</span></h2>
+        <p class="hero-description">To Sevanthi — the sweetest plot twist in my life, my safe place, and the smile I never want to lose. This tiny universe is yours.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#memories">Wander through us <span class="button-arrow">↓</span></a>
+          <button class="button button-quiet" id="heroGiftButton" type="button"><span class="mini-gift">✧</span> There's a surprise</button>
+        </div>
+        <div class="hero-signature"><span class="signature-line"></span><span>with endless love, always</span><span class="signature-heart">♡</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative glowing heart artwork">
+        <div class="hero-orbit hero-orbit-one"></div>
+        <div class="hero-orbit hero-orbit-two"></div>
+        <div class="hero-orbit hero-orbit-three"></div>
+        <div class="hero-spark spark-one">✦</div><div class="hero-spark spark-two">✧</div><div class="hero-spark spark-three">✦</div>
+        <div class="hero-glass-card">
+          <div class="heart-aura"></div>
+          <div class="hero-big-heart">♥</div>
+          <div class="hero-card-caption"><span>ONE HEART</span><span class="caption-dot">·</span><span>INFINITE FEELINGS</span></div>
+        </div>
+        <div class="floating-note note-top"><span>♡</span> you are magic</div>
+        <div class="floating-note note-bottom"><span>✦</span> my favourite hello</div>
+      </div>
+      <a class="scroll-cue" href="#little-things"><span class="scroll-cue-line"></span><span>SCROLL A LITTLE</span></a>
+    </section>
+
+    <!-- Little things -->
+    <section class="little-things section-shell" id="little-things">
+      <div class="section-heading centered">
+        <span class="eyebrow">A FEW THINGS I HOPE YOU NEVER FORGET</span>
+        <h2>You make ordinary days feel <em>golden.</em></h2>
+        <p>Not all stars live in the sky. Some laugh, dream, and make the world warmer.</p>
+      </div>
+      <div class="little-grid">
+        <article class="little-card">
+          <span class="little-icon">☾</span><span class="little-number">01 / ALWAYS</span>
+          <h3>My calm in the chaos</h3><p>Even on the loudest days, thinking of you feels like coming home.</p>
+        </article>
+        <article class="little-card little-card-featured">
+          <span class="little-icon">✧</span><span class="little-number">02 / FOREVER</span>
+          <h3>My favourite person</h3><p>Out of all the people in this enormous world, my heart found you.</p>
+        </article>
+        <article class="little-card">
+          <span class="little-icon">♡</span><span class="little-number">03 / INFINITE</span>
+          <h3>My sweetest adventure</h3><p>Here's to more stories, silly laughs, little moments, and big dreams together.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="memories-section" id="memories">
+      <div class="section-shell">
+        <div class="section-heading gallery-heading">
+          <div>
+            <span class="eyebrow">A GALLERY OF MY FAVOURITE FEELING</span>
+            <h2>Holding Hands <em>Together.</em></h2>
+            <p>Every picture holds a little piece of my heart. These moments will always have a place here.</p>
+          </div>
+          <div class="gallery-counter"><span class="counter-number" id="photoCount">09</span><span class="counter-label">LITTLE<br />MEMORIES</span></div>
+        </div>
+        <div class="gallery-toolbar">
+          <span class="gallery-note"><span class="gallery-note-dot"></span> OUR STORY, FRAME BY FRAME</span>
+          
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="gallery-card gallery-card-tall">
+            <button class="photo-frame photo-frame-rose has-photo" type="button" aria-label="Open memory one"><img src="assets/images/memory-01.jpeg" alt="Sevanthi and her favourite person" loading="lazy"><span class="photo-overlay"><span>01</span><span>the beginning of forever</span></span></button>
+            <div class="photo-caption"><span>01 — THE BEGINNING</span><p>Somewhere between hello and forever.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-lilac has-photo" type="button" aria-label="Open memory two"><img src="assets/images/memory-02.jpeg" alt="Sevanthi and a loving moment" loading="lazy"><span class="photo-overlay"><span>02</span><span>my favourite smile</span></span></button>
+            <div class="photo-caption"><span>02 — THAT SMILE</span><p>The view I could never get tired of.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-blue has-photo" type="button" aria-label="Open memory three"><img src="assets/images/memory-03.jpeg" alt="A favourite memory together" loading="lazy"><span class="photo-overlay"><span>03</span><span>little moments, big love</span></span></button>
+            <div class="photo-caption"><span>03 — LITTLE MOMENTS</span><p>Quiet moments, unforgettable feelings.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-gold has-photo" type="button" aria-label="Open memory four"><img src="assets/images/memory-04.jpeg" alt="A happy moment together" loading="lazy"><span class="photo-overlay"><span>04</span><span>you feel like sunshine</span></span></button>
+            <div class="photo-caption"><span>04 — SUNSHINE</span><p>You make even the ordinary glow.</p></div>
+          </article>
+          <article class="gallery-card gallery-card-wide">
+            <button class="photo-frame photo-frame-plum has-photo" type="button" aria-label="Open memory five"><img src="assets/images/memory-05.jpeg" alt="Sevanthi smiling" loading="lazy"><span class="photo-overlay"><span>05</span><span>two hearts, one story</span></span></button>
+            <div class="photo-caption"><span>05 — OUR LITTLE WORLD</span><p>Different places, one beautiful connection.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-mint has-photo" type="button" aria-label="Open memory six"><img src="assets/images/memory-06.jpeg" alt="Sevanthi outdoors" loading="lazy"><span class="photo-overlay"><span>06</span><span>to a thousand tomorrows</span></span></button>
+            <div class="photo-caption"><span>06 — TO TOMORROW</span><p>My favourite chapter is still being written.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-rose has-photo" type="button" aria-label="Open memory seven"><img src="assets/images/memory-07.jpeg" alt="Sevanthi with flowers" loading="lazy"><span class="photo-overlay"><span>07</span><span>a moment worth keeping</span></span></button>
+            <div class="photo-caption"><span>07 — SWEET SURPRISE</span><p>A little moment, a lot of love.</p></div>
+          </article>
+          <article class="gallery-card gallery-card-tall">
+            <button class="photo-frame photo-frame-lilac has-photo" type="button" aria-label="Open memory eight"><img src="assets/images/memory-08.jpeg" alt="A favourite picture together" loading="lazy"><span class="photo-overlay"><span>08</span><span>my favourite view</span></span></button>
+            <div class="photo-caption"><span>08 — JUST US</span><p>This is one of my favourite views.</p></div>
+          </article>
+          <article class="gallery-card">
+            <button class="photo-frame photo-frame-blue has-photo" type="button" aria-label="Open memory nine"><img src="assets/images/memory-09.jpeg" alt="Sevanthi and a treasured memory" loading="lazy"><span class="photo-overlay"><span>09</span><span>another day, one more smile</span></span></button>
+            <div class="photo-caption"><span>09 — ALWAYS WORTH KEEPING</span><p>One more memory in our story.</p></div>
+          </article>
+        </div>
+        <p class="gallery-tip"><span>✦</span> Tap any photo to see it in full.</p>
+      </div>
+    </section>
+
+    <!-- Surprise section -->
+    <section class="surprises-section section-shell" id="surprises">
+      <div class="section-heading centered">
+        <span class="eyebrow">PSSST… I SAVED A FEW SURPRISES</span>
+        <h2>Ready for a little <em>magic?</em></h2>
+        <p>There are no distance limits on love. Open these whenever you need a reminder.</p>
+      </div>
+      <div class="surprise-grid">
+        <article class="surprise-card gift-card" id="giftCard">
+          <div class="surprise-card-top"><span class="surprise-tag">SURPRISE 01</span><span class="surprise-star">✧</span></div>
+          <div class="gift-scene" aria-hidden="true">
+            <div class="gift-glow"></div><div class="gift-box"><div class="gift-lid"></div><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div><div class="gift-bow bow-left"></div><div class="gift-bow bow-right"></div></div>
+            <span class="gift-spark gift-spark-a">✦</span><span class="gift-spark gift-spark-b">✧</span><span class="gift-spark gift-spark-c">✦</span>
+          </div>
+          <h3>A gift from my heart</h3><p>It is wrapped in a little mystery. Go on, open it.</p>
+          <button class="button button-primary surprise-button" id="giftButton" type="button">Unwrap your gift <span>↗</span></button>
+          <div class="gift-reveal" id="giftReveal" hidden>
+            <div class="gift-reveal-icon">💌</div><span class="eyebrow">YOUR GIFT, AISHU</span>
+            <h4>A lifetime of little promises.</h4>
+            <p>One thousand hugs, endless patient listening, spontaneous laughs, and someone who keeps choosing you — again and again. That is my gift to you.</p>
+            <span class="gift-reveal-sign">Yours, in every universe ♡</span>
+          </div>
+        </article>
+
+        <article class="surprise-card hug-card" id="hugCard">
+          <div class="surprise-card-top"><span class="surprise-tag">SURPRISE 02</span><span class="surprise-star">♡</span></div>
+          <div class="hug-scene" id="hugScene" aria-hidden="true">
+            <div class="hug-orbit hug-orbit-a"></div><div class="hug-orbit hug-orbit-b"></div>
+            <div class="hug-heart">♥</div>
+            <div class="hug-person person-left"><span class="person-head"></span><span class="person-body"></span><span class="person-arm"></span></div>
+            <div class="hug-person person-right"><span class="person-head"></span><span class="person-body"></span><span class="person-arm"></span></div>
+            <span class="hug-floating-heart">♡</span>
+          </div>
+          <h3>A hug across the miles</h3><p>Close your eyes for a second. Imagine the biggest, warmest hug.</p>
+          <button class="button button-outline surprise-button" id="hugButton" type="button">Send me a hug <span>♡</span></button>
+          <p class="hug-feedback" id="hugFeedback" aria-live="polite">A warm hug is waiting right here.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Birthday mini-games -->
+    <section class="games-section section-shell" id="games">
+      <div class="section-heading centered">
+        <span class="eyebrow">A LITTLE PLAYTIME, MADE FOR YOU</span>
+        <h2>Three games, <em>endless smiles.</em></h2>
+        <p>Match a few memories, catch the falling hearts, and see how well you know our little universe. Play again whenever you like.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card memory-game">
+          <div class="game-card-top"><span>GAME 01 · MEMORY MAGIC</span><span>✧</span></div>
+          <h3>Love at first match</h3>
+          <p>Find all six matching pairs. Every shuffle makes a fresh little challenge.</p>
+          <div class="game-stats"><span>Moves <strong id="memoryMoves">0</strong></span><span>Pairs <strong id="memoryMatches">0 / 6</strong></span></div>
+          <div class="memory-board" id="memoryBoard" role="group" aria-label="Memory matching game"></div>
+          <p class="game-status" id="memoryStatus" role="status" aria-live="polite">Find the matching pairs, birthday girl ♡</p>
+          <button class="game-button" id="memoryReset" type="button">Shuffle &amp; play again <span>↻</span></button>
+        </article>
+
+        <article class="game-card catcher-game">
+          <div class="game-card-top"><span>GAME 02 · CATCH THE MAGIC</span><span>♡</span></div>
+          <h3>Heart catcher</h3>
+          <p>Catch as many hearts as you can before the little rain shower ends.</p>
+          <div class="game-stats"><span>Score <strong id="catchScore">0</strong></span><span>Best <strong id="catchBest">0</strong></span><span>Time <strong id="catchTime">20</strong>s</span></div>
+          <div class="catch-arena" id="catchArena" aria-label="Heart-catching play area">
+            <span class="catch-cloud catch-cloud-one">☁</span><span class="catch-cloud catch-cloud-two">☁</span>
+            <button class="catch-target" id="catchTarget" type="button" aria-label="Catch this heart" hidden>♥</button>
+            <span class="catch-hint" id="catchHint">Ready for a little heart rain?</span>
+          </div>
+          <p class="game-status" id="catchStatus" role="status" aria-live="polite">You have 20 seconds to catch them all.</p>
+          <button class="game-button" id="catchStart" type="button">Start heart rain <span>♡</span></button>
+        </article>
+
+        <article class="game-card quiz-game">
+          <div class="game-card-top"><span>GAME 03 · OUR LITTLE UNIVERSE</span><span>✦</span></div>
+          <h3>The Aishu quiz</h3>
+          <p>Five tiny questions about this birthday world. Let's see what you remember!</p>
+          <div class="quiz-panel">
+            <span class="quiz-progress" id="quizProgress">FIVE QUESTIONS · ALL FOR FUN</span>
+            <h4 id="quizQuestion">Ready to test your birthday-surprise memory?</h4>
+            <div class="quiz-answers" id="quizAnswers"></div>
+            <p class="game-status quiz-feedback" id="quizFeedback" role="status" aria-live="polite">There is always one right answer: you are loved. ♡</p>
+            <button class="game-button" id="quizAction" type="button">Let's play <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Music -->
+    <section class="music-section" id="music">
+      <div class="section-shell music-layout">
+        <div class="music-copy">
+          <span class="eyebrow">PRESS PLAY, THINK OF US</span>
+          <h2>Our little <em>soundtrack.</em></h2>
+          <p>Six songs for six kinds of beautiful moments. Let our little soundtrack play while you wander around this page.</p>
+          <div class="playlist" id="musicPlaylist" aria-label="Our song playlist">
+            <button class="playlist-track is-active" type="button" data-track="0"><span>01</span><strong>A Thousand Years</strong><small>Christina Perri</small></button>
+            <button class="playlist-track" type="button" data-track="1"><span>02</span><strong>Those Eyes</strong><small>New West</small></button>
+            <button class="playlist-track" type="button" data-track="2"><span>03</span><strong>Modala Maleyanthe</strong><small>Our favourite melody</small></button>
+            <button class="playlist-track" type="button" data-track="3"><span>04</span><strong>Soul Vibez</strong><small>Sanju Mattu Geeta</small></button>
+            <button class="playlist-track" type="button" data-track="4"><span>05</span><strong>Teri Meri Kahaani</strong><small>Arijit Singh &amp; Palak Muchhal</small></button>
+            <button class="playlist-track" type="button" data-track="5"><span>06</span><strong>Humnava</strong><small>Slowed + Reverb</small></button>
+          </div>
+        </div>
+        <div class="music-player-card">
+          <div class="record-art" aria-hidden="true"><div class="record-disc"><div class="record-label">♡</div></div><span class="record-star star-a">✦</span><span class="record-star star-b">✧</span></div>
+          <div class="player-meta"><span class="player-overline">NOW PLAYING IN MY HEART</span><h3 id="trackTitle">A Thousand Years</h3><p id="trackSubtitle">Christina Perri · 01 / 06</p></div>
+          <audio id="audioPlayer" preload="metadata" src="assets/music/02-a-thousand-years-slowed-reverb.m4a"></audio>
+          <div class="audio-progress-wrap"><span id="currentTime">0:00</span><input id="audioProgress" type="range" min="0" max="100" value="0" aria-label="Audio progress" /><span id="totalTime">0:00</span></div>
+          <div class="player-controls">
+            <button class="player-side-button" id="restartButton" type="button" aria-label="Restart song">↺</button>
+            <button class="player-side-button" id="previousButton" type="button" aria-label="Previous song">‹</button>
+            <button class="play-button" id="playButton" type="button" aria-label="Play song"><span id="playIcon">▶</span></button>
+            <button class="player-side-button" id="nextButton" type="button" aria-label="Next song">›</button>
+            <button class="player-side-button" id="muteButton" type="button" aria-label="Mute or unmute">♫</button>
+          </div>
+          <p class="player-footnote"><span class="equalizer"><i></i><i></i><i></i><i></i></span> A LITTLE MUSIC, A LOT OF LOVE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="letter-section section-shell" id="letter">
+      <div class="letter-stars" aria-hidden="true"><span>✧</span><span>✦</span><span>✧</span><span>·</span><span>✦</span></div>
+      <div class="letter-card">
+        <div class="letter-topline"><span>THE THINGS I WISH I COULD SAY WHILE HOLDING YOUR HAND</span><span>♡</span></div>
+        <div class="letter-icon">✉</div>
+        <span class="eyebrow">A LITTLE LETTER FOR YOU</span>
+        <h2>To my dearest <em>Sevanthi.</em></h2>
+        <div class="letter-body" id="letterBody">
+          <p>Happy birthday, my Aishu. ♡</p>
+          <p>I hope today gives you a hundred reasons to smile, and I hope you always see even a little of the magic that I see in you. You make my world softer, brighter, and so much more beautiful just by being in it.</p>
+          <p>On your birthday, I wish you courage for every dream, peace for every difficult day, laughter that makes your cheeks hurt, and love that never makes you question how special you are.</p>
+          <p>No matter how many miles are between us, you have a permanent place in my thoughts and in my heart. I am cheering for you, believing in you, and choosing you in all the little ways, every single day.</p>
+          <p>Keep shining, birthday girl. The world is lucky to have you — and I am luckier still.</p>
+        </div>
+        <div class="letter-signoff"><span>Forever your biggest fan,</span><strong>Someone who loves you endlessly <b>♡</b></strong></div>
+        <div class="letter-seal">S<span>♥</span>A</div>
+      </div>
+      <p class="letter-bottom-note">SOME FEELINGS ARE TOO BIG FOR WORDS. THIS IS MY LITTLE TRY. <span>✦</span></p>
+    </section>
+
+    <!-- Rainy day interlude -->
+    <section class="rainy-section" id="rainy-day">
+      <div class="rainy-window" aria-hidden="true">
+        <span class="window-glow"></span><span class="window-moon">☾</span>
+        <span class="cityline cityline-one"></span><span class="cityline cityline-two"></span>
+        <span class="window-heart">♡</span>
+      </div>
+      <div class="section-shell rainy-content">
+        <div class="rainy-copy">
+          <span class="eyebrow">A LITTLE RAIN, A LOT OF LOVE</span>
+          <h2>Even rainy days<br />feel <em>beautiful</em> with you.</h2>
+          <p>Imagine we're sitting by the window, listening to the rain, sharing one blanket, and talking about absolutely everything. Until I can be there, let this tiny rainy-day corner keep you company.</p>
+          <button class="button button-primary" id="rainWishButton" type="button">Send a wish with the rain <span>♡</span></button>
+          <span class="rain-note" id="rainNote" aria-live="polite">A little drop of love is on its way…</span>
+        </div>
+        <div class="rainy-scene" aria-label="A dreamy rainy window with pink lights">
+          <div class="rainy-scene-top"><span>WINDOW NO. 20</span><span>OUR LITTLE WEATHER</span></div>
+          <div class="rainy-view">
+            <div class="rainy-sky"><span class="sky-star star-one">✦</span><span class="sky-star star-two">✧</span><span class="sky-moon">☾</span><div class="rainy-horizon"></div><div class="rainy-city"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="rainy-glass-shine"></div>
+            <div class="rainy-window-bar bar-vertical"></div><div class="rainy-window-bar bar-horizontal"></div>
+            <div class="window-message"><span>MY FAVOURITE VIEW</span><strong>you, in every kind of weather.</strong></div>
+          </div>
+          <div class="rainy-scene-bottom"><span>☁︎  soft skies, softer hearts</span><span>♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open when surprise notes -->
+    <section class="open-when-section section-shell" id="open-when">
+      <div class="section-heading centered">
+        <span class="eyebrow">LITTLE NOTES FOR DIFFERENT MOMENTS</span>
+        <h2>Open when you need <em>me.</em></h2>
+        <p>Four tiny letters, saved for four different kinds of days. Choose one and let it unfold.</p>
+      </div>
+      <div class="envelope-grid">
+        <article class="envelope-card" data-note="miss">
+          <div class="envelope-art"><span class="envelope-stamp">♡</span><span class="envelope-flap"></span><span class="envelope-letter">A</span></div>
+          <span class="envelope-label">OPEN WHEN… 01</span><h3>You miss me</h3><p>For the days when the miles feel a little too long.</p>
+          <button class="text-button note-open-button" type="button">Open this note <span>↗</span></button>
+          <div class="envelope-message" hidden>Close your eyes, Aishu. Somewhere under this same sky, I'm thinking of you too. Distance can measure the miles, but it could never measure how close you are to my heart. One day, this will be a hug instead of a message. ♡</div>
+        </article>
+        <article class="envelope-card" data-note="smile">
+          <div class="envelope-art envelope-art-lilac"><span class="envelope-stamp">✧</span><span class="envelope-flap"></span><span class="envelope-letter">☺</span></div>
+          <span class="envelope-label">OPEN WHEN… 02</span><h3>You need a smile</h3><p>A reminder that your smile is one of my favourite things.</p>
+          <button class="text-button note-open-button" type="button">Open this note <span>↗</span></button>
+          <div class="envelope-message" hidden>Breaking news: the prettiest person in my universe is reading this right now. Please smile immediately. Thank you for your cooperation. Sending one ridiculous amount of love and a thousand imaginary forehead kisses. ♡</div>
+        </article>
+        <article class="envelope-card" data-note="tired">
+          <div class="envelope-art envelope-art-blue"><span class="envelope-stamp">☾</span><span class="envelope-flap"></span><span class="envelope-letter">Zz</span></div>
+          <span class="envelope-label">OPEN WHEN… 03</span><h3>Everything feels heavy</h3><p>For a gentle reminder to be kind to yourself.</p>
+          <button class="text-button note-open-button" type="button">Open this note <span>↗</span></button>
+          <div class="envelope-message" hidden>You don't have to be strong every second, my love. Take a breath, drink some water, rest your beautiful mind, and take things one little step at a time. I'm proud of you for trying. You deserve softness too. ♡</div>
+        </article>
+        <article class="envelope-card" data-note="birthday">
+          <div class="envelope-art envelope-art-gold"><span class="envelope-stamp">✦</span><span class="envelope-flap"></span><span class="envelope-letter">20</span></div>
+          <span class="envelope-label">OPEN WHEN… 04</span><h3>It's your birthday</h3><p>The biggest birthday wish, folded into a little note.</p>
+          <button class="text-button note-open-button" type="button">Open this note <span>↗</span></button>
+          <div class="envelope-message" hidden>Happy birthday, Sevanthi! May this new chapter bring you beautiful surprises, brave new beginnings, peaceful nights, loud laughter, and every dream you've been quietly wishing for. Today and always, I hope you feel cherished. ♡</div>
+        </article>
+      </div>
+      <div class="all-notes-message" id="allNotesMessage" hidden>Every little note leads to the same place: you are loved, Aishu. Always. <span>♡</span></div>
+    </section>
+
+    <!-- Star constellation surprise -->
+    <section class="constellation-section" id="constellation">
+      <div class="section-shell constellation-layout">
+        <div class="constellation-copy">
+          <span class="eyebrow">LOOK UP, BIRTHDAY GIRL</span>
+          <h2>I'd name every<br /><em>star</em> after you.</h2>
+          <p>Tap the glowing stars one by one. Each one is holding a little wish just for you.</p>
+          <div class="star-progress"><span id="starProgress">00</span><span> / 06 STARS DISCOVERED</span></div>
+          <div class="constellation-reveal" id="constellationReveal" aria-live="polite">The sky is waiting for your touch…</div>
+        </div>
+        <div class="constellation-sky" id="constellationSky" aria-label="Interactive constellation with six stars">
+          <svg class="constellation-lines" viewBox="0 0 520 420" aria-hidden="true"><path d="M75 105 L176 66 L255 145 L365 95 L430 205 L321 285 L190 330 L75 245 Z"/><path d="M176 66 L190 330 M255 145 L321 285"/></svg>
+          <button class="constellation-star star-point-1" data-star="0" type="button" aria-label="Discover star one">✦</button>
+          <button class="constellation-star star-point-2" data-star="1" type="button" aria-label="Discover star two">✦</button>
+          <button class="constellation-star star-point-3" data-star="2" type="button" aria-label="Discover star three">✦</button>
+          <button class="constellation-star star-point-4" data-star="3" type="button" aria-label="Discover star four">✦</button>
+          <button class="constellation-star star-point-5" data-star="4" type="button" aria-label="Discover star five">✦</button>
+          <button class="constellation-star star-point-6" data-star="5" type="button" aria-label="Discover star six">✦</button>
+          <span class="sky-dust dust-1">·</span><span class="sky-dust dust-2">✧</span><span class="sky-dust dust-3">·</span><span class="sky-dust dust-4">✧</span>
+          <span class="constellation-caption">THE AISHU CONSTELLATION · DISCOVER ALL SIX</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- A reason on demand -->
+    <section class="reasons-section section-shell" id="reasons">
+      <div class="reasons-card">
+        <div class="reason-orbit reason-orbit-one"></div><div class="reason-orbit reason-orbit-two"></div>
+        <div class="reason-content">
+          <span class="eyebrow">A NEVER-ENDING LIST</span>
+          <div class="reason-heart">♥</div>
+          <p class="reason-count" id="reasonCount">01 / 100</p>
+          <h2>One little reason<br />I <em>adore you.</em></h2>
+          <p class="reason-text" id="reasonText">Because your existence makes my world a gentler place.</p>
+          <button class="button button-primary" id="nextReasonButton" type="button">Tell me another <span>✧</span></button>
+          <span class="reason-footnote">A HUNDRED TAPS, A MILLION FEELINGS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future date ticket -->
+    <section class="date-ticket-section section-shell" id="future-date">
+      <div class="ticket-copy">
+        <span class="eyebrow">A PROMISE FOR THE FUTURE</span>
+        <h2>Our next little<br /><em>adventure.</em></h2>
+        <p>One day soon, no screens, no distance — just us. I made you a tiny ticket for that day.</p>
+      </div>
+      <div class="date-ticket" id="dateTicket">
+        <div class="ticket-main"><span class="ticket-overline">ADMIT TWO · NO DISTANCE ALLOWED</span><div class="ticket-plane">♡</div><h3>One date with me</h3><p>For a day full of hand-holding, silly photos, your favourite food, and a thousand memories.</p><button class="button button-primary" id="ticketButton" type="button">Reveal our date plan <span>↗</span></button><div class="ticket-reveal" id="ticketReveal" hidden><strong>THE PLAN:</strong><span>Sunset walk → your favourite treats → lots of pictures → one very long hug.</span><small>DATE: THE NEXT TIME WE'RE TOGETHER · VENUE: ANYWHERE WITH YOU</small></div></div>
+        <div class="ticket-side"><span>FOR</span><strong>AISHU</strong><span>ALWAYS</span><b>♡</b></div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing-section">
+      <div class="closing-orb" aria-hidden="true"></div>
+      <span class="eyebrow">AND ONE LAST THING…</span>
+      <h2>In every lifetime,<br /><em>I'd find you.</em></h2>
+      <p>Happy birthday, Sevanthi. Keep being wonderfully, unapologetically you.</p>
+      <div class="closing-heart">♡</div>
+      <a href="#top" class="back-top">BACK TO OUR LITTLE UNIVERSE ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>CRAFTED WITH LOVE FOR SEVANTHI · 20 NOVEMBER</span><span>ONE HEART. INFINITE FEELINGS. <b>♡</b></span></footer>
+
+  <!-- Image lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview" hidden>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="A memory" />
+    <p id="lightboxCaption"></p>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
